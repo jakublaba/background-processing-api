@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: background-processing-api
+  cache:
+    cache-names: jobs
+    caffeine:
+      spec: jobs=expireAfterWrite=1d,maximumSize=1000
